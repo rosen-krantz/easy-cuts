@@ -98,14 +98,14 @@ button { color: inherit; font: inherit; }
 
 .hero {
   min-height: min(760px, calc(100svh - 92px));
-  padding-block: clamp(56px, 7.2vw, 110px) clamp(76px, 9vw, 130px);
+  padding-block: clamp(28px, 3vw, 48px) clamp(76px, 9vw, 130px);
   display: grid;
   grid-template-columns: minmax(360px, .92fr) minmax(430px, 1.08fr);
-  align-items: center;
+  align-items: start;
   gap: clamp(48px, 9.2vw, 140px);
   position: relative;
 }
-.hero-copy { max-width: 610px; padding-block: 26px; }
+.hero-copy { max-width: 610px; }
 h1, h2, h3, p { margin-top: 0; }
 h1, h2 {
   font-family: var(--serif);
@@ -117,6 +117,9 @@ h1 {
   margin-bottom: 26px;
   font-size: var(--type-hero);
   line-height: .99;
+}
+@media (min-width: 701px) {
+  .hero h1 { text-box-trim: trim-start; text-box-edge: cap alphabetic; }
 }
 .hero-description { max-width: 470px; margin-bottom: 33px; color: var(--ink-soft); font-size: var(--type-body); line-height: 1.85; }
 .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 23px; }
@@ -356,8 +359,7 @@ a.button-dark:hover, a.button-dark:hover span { color: var(--white); }
   .primary-nav a { min-height: 44px; padding-block: 14px; border-top: 1px solid var(--rule);  }
   .header-booking {  white-space: nowrap; }
   .header-booking span { margin-left: 3px; }
-  .hero { padding-block: 47px 72px; grid-template-columns: 1fr; gap: 35px; }
-  .hero-copy { padding: 0; }
+  .hero { padding-block: 24px 72px; grid-template-columns: 1fr; gap: 35px; }
   h1 { max-width: 520px; margin-bottom: 19px;  }
   .hero-description { max-width: 520px;  line-height: 1.8; }
   .hero-actions { gap: 18px; }
