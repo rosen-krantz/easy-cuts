@@ -6,9 +6,8 @@
     <meta name="theme-color" content="#f1eee6">
     <meta name="description" content="Easy Cuts — камерная студия мужских стрижек рядом с Трубной. Познакомьтесь с Никитой и Дмитрием, посмотрите цены и выберите время для стрижки.">
     <title>Easy Cuts — студия мужских стрижек в центре Москвы</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="assets/fonts/cormorant-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/manrope-400.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
   </head>
@@ -42,10 +41,9 @@
           <p class="hero-note">Работаем ежедневно с 10:00 до 22:00</p>
         </div>
         <figure class="hero-image image-frame">
-          <img src="assets/interior-main.jpg" alt="Интерьер Easy Cuts с креслами и рабочими местами" fetchpriority="high">
+          <img src="assets/interior-main-1024.webp" srcset="assets/interior-main-640.webp 640w, assets/interior-main-1024.webp 1024w" sizes="(max-width: 700px) calc(100vw - 40px), 50vw" width="1024" height="683" decoding="async" alt="Интерьер Easy Cuts с креслами и рабочими местами" fetchpriority="high">
           <figcaption><span>Easy Cuts</span><span>Большой Головин переулок, 3к1</span></figcaption>
         </figure>
-        <div class="hero-side-note" aria-hidden="true">Тихий переулок<br>рядом с Трубной</div>
       </section>
 
       <section class="intro-band" aria-label="О студии">
@@ -64,7 +62,7 @@
         <div class="masters-feature" id="work">
           <article class="master-profile">
             <a class="gallery-open" href="assets/nikita_work.webp" data-image="assets/nikita_work.webp" data-alt="Никита стрижёт клиента в Easy Cuts" aria-label="Открыть фотографию работы Никиты">
-                <img src="assets/nikita_work.webp" alt="Никита подбирает форму стрижки клиенту" loading="lazy">
+                <img src="assets/nikita_work-640.webp" srcset="assets/nikita_work-320.webp 320w, assets/nikita_work-640.webp 640w" sizes="(max-width: 700px) 132px, (max-width: 980px) 260px, 280px" width="853" height="1280" decoding="async" alt="Никита подбирает форму стрижки клиенту" loading="lazy">
               </a>
             <div class="master-profile-copy">
               <div class="master-name-block"><h3>Никита Ковалёв</h3><p>Опыт работы 9 лет</p></div>
@@ -74,7 +72,7 @@
           </article>
           <article class="master-profile">
             <a class="gallery-open" href="assets/dmitri_work.webp" data-image="assets/dmitri_work.webp" data-alt="Дмитрий стрижёт клиента в Easy Cuts" aria-label="Открыть фотографию работы Дмитрия">
-                <img src="assets/dmitri_work.webp" alt="Дмитрий работает над стрижкой" loading="lazy">
+                <img src="assets/dmitri_work-640.webp" srcset="assets/dmitri_work-320.webp 320w, assets/dmitri_work-640.webp 640w" sizes="(max-width: 700px) 132px, (max-width: 980px) 260px, 280px" width="853" height="1280" decoding="async" alt="Дмитрий работает над стрижкой" loading="lazy">
               </a>
             <div class="master-profile-copy">
               <div class="master-name-block"><h3>Дмитрий Коноплёв</h3><p>Опыт работы 8 лет</p></div>
@@ -92,9 +90,9 @@
           </div>
           <p class="section-aside">Мытьё головы и укладка уже входят в стоимость мужской стрижки.</p>
           <div class="service-photo-row" aria-label="Фото процесса услуг">
-            <figure class="service-photo"><img src="assets/cutting.webp" alt="Работа ножницами во время стрижки" loading="lazy"><figcaption>Стрижка</figcaption></figure>
-            <figure class="service-photo"><img src="assets/cutting_machine.webp" alt="Аккуратная работа машинкой у виска" loading="lazy"><figcaption>Стрижка машинкой</figcaption></figure>
-            <figure class="service-photo"><img src="assets/shaving.webp" alt="Бритьё опасной бритвой" loading="lazy"><figcaption>Бритьё</figcaption></figure>
+            <figure class="service-photo"><img src="assets/cutting-640.webp" srcset="assets/cutting-320.webp 320w, assets/cutting-640.webp 640w" sizes="(max-width: 700px) 30vw, 160px" width="853" height="1280" decoding="async" alt="Работа ножницами во время стрижки" loading="lazy"><figcaption>Стрижка</figcaption></figure>
+            <figure class="service-photo"><img src="assets/cutting_machine-640.webp" srcset="assets/cutting_machine-320.webp 320w, assets/cutting_machine-640.webp 640w" sizes="(max-width: 700px) 30vw, 160px" width="853" height="1280" decoding="async" alt="Аккуратная работа машинкой у виска" loading="lazy"><figcaption>Стрижка машинкой</figcaption></figure>
+            <figure class="service-photo"><img src="assets/shaving-640.webp" srcset="assets/shaving-320.webp 320w, assets/shaving-640.webp 640w" sizes="(max-width: 700px) 30vw, 160px" width="853" height="1280" decoding="async" alt="Бритьё опасной бритвой" loading="lazy"><figcaption>Бритьё</figcaption></figure>
           </div>
         </div>
         <div class="price-list">
@@ -159,7 +157,7 @@
           </div>
         </div>
         <figure class="visit-map visit-photo">
-          <img src="assets/enter.webp" alt="Фасад дома, где находится Easy Cuts; вход отмечен стрелкой" loading="lazy">
+          <img src="assets/enter-640.webp" srcset="assets/enter-320.webp 320w, assets/enter-640.webp 640w" sizes="(max-width: 700px) calc(100vw - 40px), 50vw" width="853" height="1280" decoding="async" alt="Фасад дома, где находится Easy Cuts; вход отмечен стрелкой" loading="lazy">
           <figcaption>Вход со стороны переулка. Подъезд 1, второй этаж.</figcaption>
         </figure>
       </section>
@@ -176,7 +174,7 @@
 
     <dialog class="image-dialog" aria-label="Просмотр фотографии">
       <button class="dialog-close" type="button" aria-label="Закрыть фотографию"><span aria-hidden="true">×</span></button>
-      <img src="assets/interior-main.jpg" alt="Интерьер Easy Cuts с креслами и рабочими местами">
+      <img alt="Интерьер Easy Cuts с креслами и рабочими местами">
       <p>Мастер Easy Cuts за работой</p>
     </dialog>
   </body>
