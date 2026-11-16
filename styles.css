@@ -125,7 +125,7 @@ h1 {
   line-height: .99;
 }
 @media (min-width: 701px) {
-  .hero h1 { text-box-trim: trim-start; text-box-edge: cap alphabetic; }
+  .hero h1, .visit-copy h2 { text-box-trim: trim-start; text-box-edge: ex alphabetic; }
 }
 .hero-description { max-width: 470px; margin-bottom: 33px; color: var(--ink-soft); font-size: var(--type-body); line-height: 1.85; }
 .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 23px; }
@@ -264,7 +264,7 @@ a.button-dark:hover, a.button-dark:hover span { color: var(--white); }
 @media (max-width: 900px) { .review-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 540px) { .review-grid { grid-template-columns: 1fr; gap: 12px; } }
 
-.visit { display: grid; grid-template-columns: .85fr 1.15fr; align-items: center; gap: clamp(50px, 9vw, 130px); }
+.visit { display: grid; grid-template-columns: .85fr 1.15fr; align-items: start; gap: clamp(50px, 9vw, 130px); }
 .visit-copy h2 { margin-bottom: 25px; }
 .visit-address { max-width: 400px; margin-bottom: 10px; font-size: var(--type-body); font-weight: 600; }
 .visit-hint { color: var(--ink-soft); font-size: var(--type-body); }
