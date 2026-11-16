@@ -186,9 +186,9 @@ h1 {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  gap: clamp(32px, 7vw, 100px);
+  gap: clamp(24px, 3vw, 48px);
 }
-.intro-statement { max-width: 710px; margin: 0; font-family: var(--serif); font-size: var(--type-title); letter-spacing: -.03em; line-height: 1.35; }
+.intro-statement { max-width: 100%; text-wrap: balance; margin: 0; font-family: var(--serif); font-size: var(--type-title); letter-spacing: -.03em; line-height: 1.35; }
 .intro-band .arrow-link { font-size: var(--type-body); color: var(--white); white-space: nowrap; }
 .intro-band .arrow-link:hover { color: var(--white); }
 .intro-band .arrow-link span { font-size: 1em; color: #e2e4d7; }
