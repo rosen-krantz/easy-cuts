@@ -145,6 +145,8 @@ h1 {
 .button-dark { background: var(--olive-deep); color: var(--white); }
 .button-dark:hover { background: var(--ink); color: var(--white); }
 .button span { font-size: 1em; font-weight: 400; }
+.link-icon { display: inline-flex; flex: 0 0 auto; vertical-align: middle; }
+.link-icon svg { display: block; width: 1.15em; height: 1.15em; }
 .text-link, .arrow-link {
   min-height: 44px;
   display: inline-flex;
@@ -353,12 +355,15 @@ a.button-dark:hover, a.button-dark:hover span { color: var(--white); }
     flex-direction: column;
     align-items: stretch;
     gap: 0;
-    background: var(--paper);
-    border-bottom: 1px solid var(--rule);
+    background: var(--olive-deep);
+    color: var(--white);
+    border-bottom: 0;
   }
+  .primary-nav a, .primary-nav a:hover { color: var(--white); }
+  .primary-nav a:focus-visible { outline-color: var(--white); }
   .has-js .primary-nav { display: none; }
   .has-js .primary-nav.is-open { display: flex; }
-  .primary-nav a { min-height: 44px; padding-block: 14px; border-top: 1px solid var(--rule);  }
+  .primary-nav a { min-height: 44px; padding-block: 14px; border-top: 1px solid rgba(248, 246, 240, .25);  }
   .header-booking {  white-space: nowrap; }
   .header-booking span { margin-left: 3px; }
   .hero { padding-block: var(--section-space); grid-template-columns: 1fr; gap: 35px; }
