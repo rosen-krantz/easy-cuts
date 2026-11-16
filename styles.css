@@ -227,7 +227,7 @@ a.button-dark:hover, a.button-dark:hover span { color: var(--white); }
 .services-heading .section-aside { max-width: 300px; margin-top: 28px; }
 .service-photo-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 30px; }
 .service-photo { min-width: 0; margin: 0; }
-.service-photo img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: contain; background: var(--paper-deep); }
+.service-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: contain; background: var(--paper-deep); }
 .service-photo figcaption { margin-top: 8px; color: var(--ink-faint); font-size: var(--type-caption); line-height: 1.4; }
 .price-list { border-top: 1px solid var(--rule); }
 .price-row { min-height: 83px; padding: 15px 0; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 24px; border-bottom: 1px solid var(--rule); }
